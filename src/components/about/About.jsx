@@ -4,10 +4,13 @@ import "./about.css";
 import ProfileImg from "../../assets/AboutImg.jpg";
 import CV from "../../assets/resume.pdf";
 import Info from "./Info";
+import { CoolMode } from "../MagicUI/CoolMode";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
+      <CoolMode>
+        <h2 className="section__title">About Me</h2>
+      </CoolMode>
       <span className="section__subtitle">My introduction</span>
       <div className="about__container container grid">
         <img src={ProfileImg} alt="" className="about__img" />

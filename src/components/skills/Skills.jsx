@@ -4,13 +4,16 @@ import Backend from "./Backend";
 import Frontend from "./Frontend";
 import Languages from "./Languages";
 import CsFundamentals from "./CsFundamentals";
+import { CoolMode } from "../MagicUI/CoolMode";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
-      <h2 className="section__title">Skills</h2>
+      <CoolMode>
+        <h2 className="section__title">Skills</h2>
+      </CoolMode>
       <span className="section__subtitle">My Technical level</span>
 
-      <div className="skills__container container grid">
+      <div className="skills__container container grid ">
         <Languages />
         <CsFundamentals />
         <Frontend />

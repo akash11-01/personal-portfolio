@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./qualifications.css";
+import { CoolMode } from "../MagicUI/CoolMode";
 const Qualifications = () => {
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
@@ -8,7 +9,9 @@ const Qualifications = () => {
 
   return (
     <section className="qualification section">
-      <h2 className="section__title">Qualification</h2>
+      <CoolMode>
+        <h2 className="section__title">Qualification</h2>
+      </CoolMode>
       <span className="section__subtitle">My Personal journey</span>
 
       <div className="qualification__container container">

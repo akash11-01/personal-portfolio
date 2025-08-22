@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { CoolMode } from "../MagicUI/CoolMode";
 const Contact = () => {
   const form = useRef();
 
@@ -18,7 +19,9 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in Touch</h2>
+      <CoolMode>
+        <h2 className="section__title">Get in Touch</h2>
+      </CoolMode>
       <span className="section__subtitle">Contact Me</span>
 
       <div className="contact__container container grid">
