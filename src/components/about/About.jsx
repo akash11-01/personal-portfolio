@@ -5,6 +5,7 @@ import ProfileImg from "../../assets/AboutImg.jpg";
 import CV from "../../assets/resume.pdf";
 import Info from "./Info";
 import { CoolMode } from "../MagicUI/CoolMode";
+import ScrollDown from "../home/ScrollDown";
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -49,6 +50,7 @@ const About = () => {
             </svg>
           </a>
         </div>
+        <ScrollDown path="#skills" />
       </div>
     </section>
   );
